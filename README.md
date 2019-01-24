@@ -2,7 +2,7 @@
 The repository includes two algorithms for training dynamic NN: 
 1) Nonlinear AutoRegressive (NAR) Network for training univariate time series and
 2) Nonlinear AutoRegressive with eXplanatory variables (NARX) Network for training multivariate time series.   
-The code is written in MATLAB. The maximum number of time delays, maximum number of hidden neurons, and number of trainings for each network architecture can be selected before execute the code.            
+The code has been written in MATLAB. The maximum number of time delays, maximum number of hidden neurons, and number of trainings for each network architecture can be selected before execute the code.            
 The performance of the trained networks for each architecture is provided by multiple criteria (R2, MAE, MAPE, MPE, and MSE) in a table at the end.           
 The training and validating sets are preprocessed through:                
 First, the outliers are detected and replaced by the median of the data window.
