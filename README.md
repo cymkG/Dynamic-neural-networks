@@ -1,6 +1,6 @@
 # Dynamic-neural-networks
-This repository contains two codes for training dynamic NN:       
-1)	Nonlinear AutoRegressive (NAR) network for predicting univariate time series data and
+This repository contains two codes for training dynamic neural networks:       
+1)	Nonlinear AutoRegressive (NAR) network for predicting univariate time series data
 2)	Nonlinear AutoRegressive with eXplanatory variables (NARX) network for predicting multivariate time series data.     
 The code is written in MATLAB. The maximum number of time delays, maximum number of hidden neurons, number of trainings, and percentage of training, validating and testing set can be selected. The performance of each network architecture is calculated by several criteria (R2, MAE, MAPE, MPE, and MSE) as a table. 
 Time series data is pre-processed before feeding to the networks by:            
