@@ -1,22 +1,26 @@
-# Dynamic-neural-networks
-This repository contains two codes for training dynamic neural networks:       
-1)	Nonlinear AutoRegressive (NAR) network for predicting univariate time series data
-2)	Nonlinear AutoRegressive with eXplanatory variables (NARX) network for predicting multivariate time series data.     
-The code is written in MATLAB. The inputs to algorithm includes:
-1.The maximum number of time delays, 
-2maximum number of hidden neurons, 
-3.number of trainings, and percentage of training, 
-4.validating and testing set can be selected. 
+This MATLAB package implements machine learning algorithm for training two dynamic neural networks:       
+1) Nonlinear AutoRegressive (NAR) network for predicting univariate time series data
+2) Nonlinear AutoRegressive with eXplanatory variables (NARX) network for predicting multivariate time series data.     
 
-The performance of each network architecture is calculated by several evaluation metrics 
-1.R2, 
-2.MAE, 
-3.MAPE, 
-4.MPE, and 
-4.MSE) as a table. 
+It is written purely in MATLAB language. It is self-contained. There is no external dependency.
 
-Data Engineering and Cleaing Phase:
-Time series data is pre-processed before feeding to the networks by:            
-First, outliers are detected and replaced by the median of the data window.           
-Second, time series is decomposed into three sub-series (approximation and details) by discrete wavelet transform.
+Design Goal:
+The algorithm is intended to find the optimum number of lag time and number of hidden neurons for the specific time series data based on multiple evaluation criteria.
 
+The inputs to algorithm includes:
+1) Input and output time series variables
+2) Maximum number of time delays (lag time), which is used as the neural network inputs
+3)  Maximum number of hidden neurons, which the networks are trained
+4)  Percentage division of training, validating, and testing set. 
+
+Data Engineering and Cleaning Phase:
+1)	Outliers are detected and replaced by the median of the data window by Hampel filtering,       
+2)	Time series is passed through two (low-frequency and high-frequency) filters using discrete wavelet transform to extract trend structure of the original time series
+3)	Data is normalized in the range of transfer function.
+
+The performance of each neural network architecture is calculated by several evaluation criteria, including: 
+1) R2: Correlation of determination
+2) MAE: Mean Absolute Error 
+3) MAPE: Mean Absolute Percentage Error
+4) MPE: Mean Percentage Error
+5) MSE: Mean Squared Error.
