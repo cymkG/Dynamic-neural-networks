@@ -5,7 +5,7 @@ This MATLAB package implements machine learning algorithm for training two dynam
 It is written purely in MATLAB language. It is self-contained. There is no external dependency.
 
 Design Goal:
-The algorithm is intended to find the optimum number of lag time and number of hidden neurons for the specific time series data based on multiple evaluation criteria.
+The algorithm is intended to find the optimum number of lag time and number of hidden neurons for the specific time series data based on multiple evaluation criteria. The flowchart of training dynamic neural network is added to the repository (Dynamic_Neural_Network_by_Farhad_Faghihi.JPG).
 
 The inputs to algorithm includes:
 1) Input and output time series variables
