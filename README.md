@@ -23,4 +23,5 @@ The performance of each neural network architecture is calculated by several eva
 2) MAE: Mean Absolute Error 
 3) MAPE: Mean Absolute Percentage Error
 4) MPE: Mean Percentage Error
-5) MSE: Mean Squared Error.
+5) MSE: Mean Squared Error
+6) RMSE: Root Mean Squared Error.
